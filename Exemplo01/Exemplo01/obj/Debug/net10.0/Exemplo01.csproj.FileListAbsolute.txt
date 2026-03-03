@@ -15,6 +15,7 @@ C:\Users\herique.pereira\Documents\Unoesc - 2026\Programacao I\Exemplo01\Exemplo
 C:\Users\herique.pereira\Documents\Unoesc - 2026\Programacao I\Exemplo01\Exemplo01\obj\Debug\net10.0\Exemplo01.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\herique.pereira\Documents\Unoesc - 2026\Programacao I\Exemplo01\Exemplo01\obj\Debug\net10.0\Exemplo01.RazorAssemblyInfo.cache
 C:\Users\herique.pereira\Documents\Unoesc - 2026\Programacao I\Exemplo01\Exemplo01\obj\Debug\net10.0\Exemplo01.RazorAssemblyInfo.cs
+C:\Users\herique.pereira\Documents\Unoesc - 2026\Programacao I\Exemplo01\Exemplo01\obj\Debug\net10.0\Exemplo01.sourcelink.json
 C:\Users\herique.pereira\Documents\Unoesc - 2026\Programacao I\Exemplo01\Exemplo01\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\herique.pereira\Documents\Unoesc - 2026\Programacao I\Exemplo01\Exemplo01\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\herique.pereira\Documents\Unoesc - 2026\Programacao I\Exemplo01\Exemplo01\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
