@@ -34,10 +34,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/herique.pereira/Documents/Unoesc - 2026/Programacao I/Exemplo01/Exemplo01/Views/Home/NotesDictionary.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3Rlc0RpY3Rpb25hcnkuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/herique.pereira/Documents/Unoesc - 2026/Programacao I/Exemplo01/Exemplo01/Views/Home/Numbers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOdW1iZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,8 +46,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWYXJpYWJsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/herique.pereira/Documents/Unoesc - 2026/Programacao I/Exemplo01/Exemplo01/Views/Notes/NotesDictionary.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZXNcTm90ZXNEaWN0aW9uYXJ5LmNzaHRtbA==
+[C:/Users/herique.pereira/Documents/Unoesc - 2026/Programacao I/Exemplo01/Exemplo01/Views/Notes/Notas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZXNcTm90YXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/herique.pereira/Documents/Unoesc - 2026/Programacao I/Exemplo01/Exemplo01/Views/Shared/Error.cshtml]

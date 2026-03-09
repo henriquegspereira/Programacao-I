@@ -1,54 +1,51 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Data;
 
 namespace Exemplo01.Controllers
 {
     public class NotesController : Controller
     {
-        public IActionResult NotesDictionary()
+        public IActionResult Notas()
         {
-
-
-            Dictionary<string, double> boletim = 
-                new Dictionary<string, double>
-                {
+            Dictionary<string, double> boletim =
+                    new Dictionary<string, double>
+                    {
                     {"Carequinha", 4.5},
                     {"Hernique lenda", 10.0},
                     {"Bernardo", 5.0},
                     {"Miguel", 6.5},
                     {"Luiz", 9.0},
 
-                };
+                    };
 
-                double soma = 0;
-                double maior = 0;
-                double menor = 10;
-                
-                int aprovados = 0;
-                int recuperacao = 0;
-                int reprovados = 0;
+            double soma = 0;
+            double maior = 0;
+            double menor = 10;
 
-                foreach (var aluno in boletim)
-                    {
-                        double notaAtual = aluno.Value;
+            int aprovados = 0;
+            int recuperacao = 0;
+            int reprovados = 0;
 
-                        soma += notaAtual;
+            foreach (var aluno in boletim)
+            {
+                double notaAtual = aluno.Value;
 
-                        if (notaAtual > maior) maior = notaAtual;
+                soma += notaAtual;
 
-                        if (notaAtual < menor) menor = notaAtual;
+                if (notaAtual > maior) maior = notaAtual;
 
-                        if (notaAtual >= 7.0)
-                            aprovados++;
+                if (notaAtual < menor) menor = notaAtual;
 
-                        else if(notaAtual >= 5.0 && notaAtual <= 6.9) 
-                            recuperacao++;
+                if (notaAtual >= 7.0)
+                    aprovados++;
 
-                        else reprovados++;
+                else if (notaAtual >= 5.0 && notaAtual <= 6.9)
+                    recuperacao++;
 
-                    }
+                else reprovados++;
 
-                double media = soma / boletim.Count;
+            }
+
+            double media = soma / boletim.Count;
 
             List<string> relatorio = new List<string>();
             relatorio.Add($"Média: {media}");
@@ -58,8 +55,7 @@ namespace Exemplo01.Controllers
             relatorio.Add($"Alunos em recuperação: {recuperacao}");
             relatorio.Add($"Alunos reprovados: {reprovados}");
 
-            return View("NotesDictionary", relatorio);
- 
+            return View("Notas", relatorio);
         }
     }
 }
