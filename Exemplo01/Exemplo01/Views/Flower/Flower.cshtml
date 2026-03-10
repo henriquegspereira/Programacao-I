@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Exemplo01.Models.Flower>
+
+@{
+    ViewData["Title"] = "Lista de Flores";
+}
+
+<h1>Minhas Flores</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tipo</th>
+            <th>Cor</th>
+            <th>Aroma</th>
+            <th>Tamanho</th>
+            <th>Valor (R$)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FlowerId</td>
+                <td>@item.Tipo</td>
+                <td>@item.Cor</td>
+                <td>@item.Aroma</td>
+                <td>@item.Tamanho</td>
+                <td>@item.Valor.ToString("C2")</td>
+            </tr>
+        }
+    </tbody>
+</table>
