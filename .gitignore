@@ -1,1 +1,13 @@
+# Pastas de compilação (Arquivos temporários e executáveis)
+bin/
+obj/
+
+# Arquivos de configuração pessoal do Visual Studio
 .vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Pastas de pacotes do NuGet
+packages/

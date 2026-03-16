@@ -1,1 +1,39 @@
-# Programacao-I
+# 💻 Programação I - Unoesc
+
+Repositório destinado ao armazenamento das atividades desenvolvidas na disciplina de Programação I. O projeto utiliza o framework **ASP.NET Core MVC**.
+
+---
+
+## 🚀 Guia de Atividades
+
+Abaixo estão os links diretos para cada exercício realizado, organizados por tema:
+
+### 🌸 1. Atividade: Catálogo de Flores
+Desenvolvimento de uma listagem completa utilizando Model própria, Controller com 10 objetos e View estruturada.
+* [Visualizar Controller](./Exemplo01/Exemplo01/Controllers/FlowerController.cs)
+* [Visualizar Model](./Exemplo01/Exemplo01/Models/Flower.cs)
+* [Visualizar View](./Exemplo01/Exemplo01/Views/Flower/Index.cshtml)
+
+### 📊 2. Atividade: Boletim e Notas
+Implementação de lógica para exibição de notas e dicionários de dados.
+* [Visualizar Controller](./Exemplo01/Exemplo01/Controllers/NotesController.cs)
+* [Visualizar View](./Exemplo01/Exemplo01/Views/Notes/Index.cshtml)
+
+### 👥 3. Atividade: Clientes (Customer)
+Estudo inicial de listagem de objetos do tipo Customer.
+* [Visualizar Controller](./Exemplo01/Exemplo01/Controllers/CustomerController.cs)
+* [Visualizar View](./Exemplo01/Exemplo01/Views/Customer/Index.cshtml)
+
+### 🏠 4. Atividades Iniciais (Home)
+Primeiros exercícios de rotas e Views genéricas (Privacy e Index).
+* [Visualizar HomeController](./Exemplo01/Exemplo01/Controllers/HomeController.cs)
+* [View: Index](./Exemplo01/Exemplo01/Views/Home/Index.cshtml)
+* [View: Privacy](./Exemplo01/Exemplo01/Views/Home/Privacy.cshtml)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+* C# (.NET 8/9)
+* ASP.NET Core MVC
+* Razor Pages
+* Bootstrap (Frontend)
