@@ -30,6 +30,10 @@ Desenvolvimento de uma listagem completa utilizando Model própria, Controller c
 * [Visualizar Model](./Exemplo01/Models/Flower.cs)
 * [Visualizar View](./Exemplo01/Views/Flower/Index.cshtml)
 
+### 🏥 5. Projeto: Clinic_vet (Models)
+Mapeamento de domínio para uma Clínica Veterinária, transformando um modelo de quadro negro em classes C#.
+* [Visualizar Pasta das Models](./Clinic_vet/Models/)
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
