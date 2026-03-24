@@ -1,0 +1,55 @@
+﻿@model IEnumerable<PropertyLibrary.Property>
+
+@{
+    ViewData["Title"] = "Properties";
+}
+
+    <style>
+        .table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            overflow: hidden;
+        }
+
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table th {
+            background-color: #f4f4f4;
+        }
+
+    </style>
+
+<h1>Properties</h1>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Contract</th>
+        <th>Address</th>
+        <th>Description</th>
+    </tr>
+
+    <tbody>
+        @foreach (var property in Model)
+        {
+            <tr>
+                <td>@property.Id</td>
+                <td>@property.Name</td>
+                <td>@property.Type</td>
+                <td>@property.Contract</td>
+                <td>@property.Address</td>
+                <td>@property.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../PropertyLibrary/PropertyLibrary.csproj" />
+  <Project Path="Imobiliary.csproj" />
+</Solution>
