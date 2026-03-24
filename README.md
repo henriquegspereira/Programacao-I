@@ -32,7 +32,7 @@ Desenvolvimento de uma listagem completa utilizando Model própria, Controller c
 
 ### 🏥 5. Projeto: Clinic_vet (Models)
 Mapeamento de domínio para uma Clínica Veterinária, transformando um modelo de quadro negro em classes C#.
-* [Visualizar Pasta das Models](./Clinic_vet/Models/)
+* [Visualizar Pasta das Models](./VeterinaryClinic/Models/)
 
 ---
 
