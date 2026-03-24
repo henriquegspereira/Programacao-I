@@ -31,7 +31,10 @@ namespace Imobiliary.Controllers
                     Description = "A beautiful beach house with an ocean view.",
                     Address = "123 Waves St, Sun Beach",
                     Type = Property.PropertyType.House,
-                    Contract = Property.ContractType.Sale
+                    Contract = Property.ContractType.Sale,
+                    Price = 450000.00m,
+                    Area = 120,
+                    Bedrooms = 3
                 },
 
                 new Property
@@ -41,7 +44,10 @@ namespace Imobiliary.Controllers
                     Description = "Modern apartment in the heart of the city.",
                     Address = "456 Main Avenue, Downtown",
                     Type = Property.PropertyType.Apartment,
-                    Contract = Property.ContractType.Rent
+                    Contract = Property.ContractType.Rent,
+                    Price = 2500.00m,
+                    Area = 75,
+                    Bedrooms = 2
                 },
 
                 new Property
@@ -51,7 +57,10 @@ namespace Imobiliary.Controllers
                     Description = "Cozy country house, ideal for relaxing.",
                     Address = "789 Rural Road, Green Field",
                     Type = Property.PropertyType.House,
-                    Contract = Property.ContractType.Sale
+                    Contract = Property.ContractType.Sale,
+                    Price = 320000.00m,
+                    Area = 200,
+                    Bedrooms = 4
                 },
 
                 new Property
@@ -61,7 +70,10 @@ namespace Imobiliary.Controllers
                     Description = "Luxury apartment with panoramic city views.",
                     Address = "321 High St, Noble District",
                     Type = Property.PropertyType.Apartment,
-                    Contract = Property.ContractType.Rent
+                    Contract = Property.ContractType.Rent,
+                    Price = 8500.00m,
+                    Area = 150,
+                    Bedrooms = 3
                 },
 
                 new Property
@@ -71,7 +83,10 @@ namespace Imobiliary.Controllers
                     Description = "Charming mountain house, perfect for weekend getaways.",
                     Address = "654 Mountain Trail, Blue Ridge",
                     Type = Property.PropertyType.House,
-                    Contract = Property.ContractType.Sale
+                    Contract = Property.ContractType.Sale,
+                    Price = 280000.00m,
+                    Area = 90,
+                    Bedrooms = 2
                 },
 
                 new Property
@@ -81,7 +96,10 @@ namespace Imobiliary.Controllers
                     Description = "Modern apartment with contemporary design and prime location.",
                     Address = "987 Artists Ave, Cultural Center",
                     Type = Property.PropertyType.Apartment,
-                    Contract = Property.ContractType.Rent
+                    Contract = Property.ContractType.Rent,
+                    Price = 3200.00m,
+                    Area = 85,
+                    Bedrooms = 2
                 },
 
                 new Property
@@ -91,7 +109,10 @@ namespace Imobiliary.Controllers
                     Description = "Luxury house with a pool, garden, and gourmet area.",
                     Address = "555 Palm St, Exclusive Condominium",
                     Type = Property.PropertyType.House,
-                    Contract = Property.ContractType.Sale
+                    Contract = Property.ContractType.Sale,
+                    Price = 1250000.00m,
+                    Area = 450,
+                    Bedrooms = 5
                 },
 
                 new Property
@@ -101,7 +122,10 @@ namespace Imobiliary.Controllers
                     Description = "Compact and functional apartment, ideal for singles or couples.",
                     Address = "222 Sun St, Central District",
                     Type = Property.PropertyType.Apartment,
-                    Contract = Property.ContractType.Rent
+                    Contract = Property.ContractType.Rent,
+                    Price = 1800.00m,
+                    Area = 45,
+                    Bedrooms = 1
                 },
 
                 new Property
@@ -111,7 +135,10 @@ namespace Imobiliary.Controllers
                     Description = "Farmhouse with a large plot of land and nature views.",
                     Address = "789 Green Road, Rural Area",
                     Type = Property.PropertyType.House,
-                    Contract = Property.ContractType.Sale
+                    Contract = Property.ContractType.Sale,
+                    Price = 550000.00m,
+                    Area = 1000,
+                    Bedrooms = 3
                 },
 
                 new Property
@@ -121,7 +148,10 @@ namespace Imobiliary.Controllers
                     Description = "Cozy apartment with charming decor and convenient location.",
                     Address = "333 Leisure St, Residential District",
                     Type = Property.PropertyType.Apartment,
-                    Contract = Property.ContractType.Rent
+                    Contract = Property.ContractType.Rent,
+                    Price = 2100.00m,
+                    Area = 65,
+                    Bedrooms = 2
                 }
              };
 

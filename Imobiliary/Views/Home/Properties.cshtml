@@ -37,6 +37,9 @@
         <th>Contract</th>
         <th>Address</th>
         <th>Description</th>
+        <th>Price</th>
+        <th>Area</th>
+        <th>Bedrooms</th>
     </tr>
 
     <tbody>
@@ -49,6 +52,9 @@
                 <td>@property.Contract</td>
                 <td>@property.Address</td>
                 <td>@property.Description</td>
+                <td>@property.Price.ToString("C")</td>
+                <td>@property.Area.ToString("N2") m²</td>
+                <td>@property.Bedrooms</td>
             </tr>
         }
     </tbody>
