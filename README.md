@@ -17,7 +17,7 @@ Primeiros exercícios de rotas e Views genéricas (Privacy e Index).
 ### 📊 2. Atividade: Boletim e Notas
 Implementação de lógica para exibição de notas e dicionários de dados.
 * [Visualizar Controller](./Exemplo01/Controllers/NotesController.cs)
-* [Visualizar View](./Exemplo01/Views/Notes/Index.cshtml)
+* [Visualizar View](./Exemplo01/Views/Notes/Notas.cshtml)
 
 ### 👥 3. Atividade: Customer
 Estudo inicial de listagem de objetos do tipo Customer.
@@ -32,7 +32,7 @@ Desenvolvimento de uma listagem completa utilizando Model própria, Controller c
 
 ### 🏥 5. Projeto: Clinic_vet (Models)
 Mapeamento de domínio para uma Clínica Veterinária, transformando um modelo de quadro negro em classes C#.
-* [Visualizar Pasta das Models](./Clinic_vet/Models/)
+* [Visualizar Pasta das Models](./VeterinaryClinic/Models/)
 
 ---
 
