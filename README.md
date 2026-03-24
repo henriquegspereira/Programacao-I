@@ -17,7 +17,7 @@ Primeiros exercícios de rotas e Views genéricas (Privacy e Index).
 ### 📊 2. Atividade: Boletim e Notas
 Implementação de lógica para exibição de notas e dicionários de dados.
 * [Visualizar Controller](./Exemplo01/Controllers/NotesController.cs)
-* [Visualizar View](./Exemplo01/Views/Notes/Index.cshtml)
+* [Visualizar View](./Exemplo01/Views/Notes/Notas.cshtml)
 
 ### 👥 3. Atividade: Customer
 Estudo inicial de listagem de objetos do tipo Customer.
