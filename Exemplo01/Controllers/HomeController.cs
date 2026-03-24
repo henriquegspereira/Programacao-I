@@ -1,6 +1,7 @@
 using Exemplo01.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using SaleOrder;
 
 namespace Exemplo01.Controllers
 {
@@ -8,6 +9,27 @@ namespace Exemplo01.Controllers
     {
         public IActionResult Index()
         {
+
+            SaleOrder.Customer c1 = 
+                new SaleOrder.Customer();
+            c1.Id = 1;
+            c1.Name = "Frodo";
+            c1.BirthDate = new DateTime(2007, 1, 17);
+
+            Console.WriteLine(c1.ToString());
+
+            Console.WriteLine(SaleOrder.Customer.InstanceCount);
+
+            SaleOrder.Customer c2 = new SaleOrder.Customer
+            {
+                Id = 2,
+                Name = "Aragorn",
+                BirthDate = new DateTime(2007, 1, 17)
+
+            };
+
+            Console.WriteLine(c1.ToString());
+
             return View();
         }
 
