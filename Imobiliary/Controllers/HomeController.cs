@@ -24,7 +24,7 @@ namespace Imobiliary.Controllers
             var properties = new List<Property>()
             {
 
-                new Property
+                new House
                 {
                     Id = 1,
                     Name = "Beach House",
@@ -34,10 +34,12 @@ namespace Imobiliary.Controllers
                     Contract = Property.ContractType.Sale,
                     Price = 450000.00m,
                     Area = 120,
-                    Bedrooms = 3
+                    Bedrooms = 3,
+                    floors = 4,
+                    hasGarage = true
                 },
 
-                new Property
+                new Apartment
                 {
                     Id = 2,
                     Name = "Downtown Apartment",
@@ -47,10 +49,12 @@ namespace Imobiliary.Controllers
                     Contract = Property.ContractType.Rent,
                     Price = 2500.00m,
                     Area = 75,
-                    Bedrooms = 2
+                    Bedrooms = 2,
+                    floor = 5,
+                    hasElevator = true
                 },
 
-                new Property
+                new House
                 {
                     Id = 3,
                     Name = "Country House",
@@ -60,10 +64,12 @@ namespace Imobiliary.Controllers
                     Contract = Property.ContractType.Sale,
                     Price = 320000.00m,
                     Area = 200,
-                    Bedrooms = 4
+                    Bedrooms = 4,
+                    floors = 2,
+                    hasGarage= true
                 },
 
-                new Property
+                new Apartment
                 {
                     Id = 4,
                     Name = "Luxury Apartment",
@@ -73,10 +79,12 @@ namespace Imobiliary.Controllers
                     Contract = Property.ContractType.Rent,
                     Price = 8500.00m,
                     Area = 150,
-                    Bedrooms = 3
+                    Bedrooms = 3,
+                    floor = 2,
+                    hasElevator = true
                 },
 
-                new Property
+                new House
                 {
                     Id = 5,
                     Name = "Mountain House",
@@ -86,10 +94,12 @@ namespace Imobiliary.Controllers
                     Contract = Property.ContractType.Sale,
                     Price = 280000.00m,
                     Area = 90,
-                    Bedrooms = 2
+                    Bedrooms = 2,
+                    floors = 1,
+                    hasGarage = false
                 },
 
-                new Property
+                new Apartment
                 {
                     Id = 6,
                     Name = "Modern Apartment",
@@ -99,10 +109,12 @@ namespace Imobiliary.Controllers
                     Contract = Property.ContractType.Rent,
                     Price = 3200.00m,
                     Area = 85,
-                    Bedrooms = 2
+                    Bedrooms = 2,
+                    floor = 8,
+                    hasElevator= true
                 },
 
-                new Property
+                new House
                 {
                     Id = 7,
                     Name = "Luxury Mansion",
@@ -112,10 +124,12 @@ namespace Imobiliary.Controllers
                     Contract = Property.ContractType.Sale,
                     Price = 1250000.00m,
                     Area = 450,
-                    Bedrooms = 5
+                    Bedrooms = 5,
+                    floors = 3,
+                    hasGarage= true
                 },
 
-                new Property
+                new Apartment
                 {
                     Id = 8,
                     Name = "Compact Apartment",
@@ -125,10 +139,12 @@ namespace Imobiliary.Controllers
                     Contract = Property.ContractType.Rent,
                     Price = 1800.00m,
                     Area = 45,
-                    Bedrooms = 1
+                    Bedrooms = 1,
+                    floor = 1,
+                    hasElevator = false
                 },
 
-                new Property
+                new House
                 {
                     Id = 9,
                     Name = "Farmhouse",
@@ -138,10 +154,12 @@ namespace Imobiliary.Controllers
                     Contract = Property.ContractType.Sale,
                     Price = 550000.00m,
                     Area = 1000,
-                    Bedrooms = 3
+                    Bedrooms = 3,
+                    floors = 3,
+                    hasGarage = true
                 },
 
-                new Property
+                new Apartment
                 {
                     Id = 10,
                     Name = "Cozy Apartment",
@@ -151,7 +169,9 @@ namespace Imobiliary.Controllers
                     Contract = Property.ContractType.Rent,
                     Price = 2100.00m,
                     Area = 65,
-                    Bedrooms = 2
+                    Bedrooms = 2,
+                    floor = 4,
+                    hasElevator = false,
                 }
              };
 

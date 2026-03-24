@@ -4,51 +4,86 @@
     ViewData["Title"] = "Properties";
 }
 
-    <style>
-        .table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0px;
-            margin-top: 20px;
-            border-radius: 10px;
-            border: 1px solid #ddd;
-            overflow: hidden;
-        }
+<style>
+    .table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        table-layout: auto; 
+    }
 
-        .table th, .table td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
+    .table th, .table td {
+        border: 1px solid #ddd;
+        padding: 12px 8px;
+        text-align: center;
+        vertical-align: middle;
+    }
 
-        .table th {
-            background-color: #f4f4f4;
-        }
+    .table th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
 
-    </style>
+    sup {
+        font-size: 0.75em;
+    }
+</style>
 
 <h1>Properties</h1>
 
 <table class="table">
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Contract</th>
-        <th>Address</th>
-        <th>Description</th>
-        <th>Price</th>
-        <th>Area</th>
-        <th>Bedrooms</th>
-    </tr>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Details</th>
+            <th>Name</th>
+            <th>Contract</th>
+            <th>Address</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Area</th>
+            <th>Bedrooms</th>
+        </tr>
+    </thead>
 
     <tbody>
         @foreach (var property in Model)
         {
             <tr>
                 <td>@property.Id</td>
+                <td>@property.GetType().Name</td>
+                <td>
+                    @if (property is PropertyLibrary.House house)
+                    {
+                        <span>
+                            @(house.hasGarage ? "Has Garage" : "No Garage")
+                            <br />
+                            <small>(@house.floors @(house.floors > 1 ? "floors" : "floor"))</small>
+                        </span>
+                    }
+                    else if (property is PropertyLibrary.Apartment apartment)
+                    {
+                            string suffix = (apartment.floor == 1) ? "st" : 
+                                            (apartment.floor == 2) ? "nd" : 
+                                            (apartment.floor == 3) ? "rd" : "th";
+                        
+        
+                        <span>
+                            On the @apartment.floor<sup>@suffix</sup> floor
+                            <small>(@(apartment.hasElevator ? "With Elevator" : "No Elevator"))</small>
+                        </span>
+                    }
+                    else
+                    {
+                        <span>-</span>
+                    }
+                </td>
                 <td>@property.Name</td>
-                <td>@property.Type</td>
                 <td>@property.Contract</td>
                 <td>@property.Address</td>
                 <td>@property.Description</td>
