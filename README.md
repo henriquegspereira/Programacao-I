@@ -34,6 +34,14 @@ Desenvolvimento de uma listagem completa utilizando Model própria, Controller c
 Mapeamento de domínio para uma Clínica Veterinária, transformando um modelo de quadro negro em classes C#.
 * [Visualizar Pasta das Models](./VeterinaryClinic/Models/)
 
+### 🏢 6. Projeto: Imobiliária (Class Library & Herança)
+Desenvolvimento de uma solução desacoplada, onde a lógica de domínio e as entidades foram isoladas em uma biblioteca de classes separada do projeto Web.
+
+Arquitetura: Uso de Class Library (.dll) para organizar as classes Property, House e Apartment
+* [Visualizar Pasta das Models](./PropertyLibrary/Models/)
+* [Visualizar View](./Imobiliary/Views/Home/Properties.cshtml)
+* [Visualizar HomeController](./Imobiliary/Controllers/HomeController.cs)
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
