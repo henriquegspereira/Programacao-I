@@ -38,7 +38,7 @@ Mapeamento de domínio para uma Clínica Veterinária, transformando um modelo d
 Desenvolvimento de uma solução desacoplada, onde a lógica de domínio e as entidades foram isoladas em uma biblioteca de classes separada do projeto Web.
 
 Arquitetura: Uso de Class Library (.dll) para organizar as classes Property, House e Apartment
-* [Visualizar Pasta das Models](./PropertyLibrary/Models/)
+* [Visualizar Pasta das Models](./PropertyLibrary/)
 * [Visualizar View](./Imobiliary/Views/Home/Properties.cshtml)
 * [Visualizar HomeController](./Imobiliary/Controllers/HomeController.cs)
 
