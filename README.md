@@ -11,36 +11,36 @@ Abaixo estão os links diretos para cada exercício realizado, organizados por t
 ### 🏠 1. Atividades Genéricas (Home)
 Primeiros exercícios de rotas e Views genéricas (Privacy e Index).
 * [Visualizar HomeController](./Exemplo01/Controllers/HomeController.cs)
-* [View: Index](./Exemplo01/Views/Home/Index.cshtml)
-* [View: Privacy](./Exemplo01/Views/Home/Privacy.cshtml)
+* [View: Index](./01_Exemplos_MVC/Exemplo01/Views/Home/Index.cshtml)
+* [View: Privacy](./01_Exemplos_MVC/Exemplo01/Views/Home/Privacy.cshtml)
 
 ### 📊 2. Atividade: Boletim e Notas
 Implementação de lógica para exibição de notas e dicionários de dados.
-* [Visualizar Controller](./Exemplo01/Controllers/NotesController.cs)
-* [Visualizar View](./Exemplo01/Views/Notes/Notas.cshtml)
+* [Visualizar Controller](./01_Exemplos_MVC/Exemplo01/Controllers/NotesController.cs)
+* [Visualizar View](./01_Exemplos_MVC/Exemplo01/Views/Notes/Notas.cshtml)
 
 ### 👥 3. Atividade: Customer
 Estudo inicial de listagem de objetos do tipo Customer.
-* [Visualizar Controller](./Exemplo01/Controllers/CustomerController.cs)
-* [Visualizar View](./Exemplo01/Views/Customer/Index.cshtml)
+* [Visualizar Controller](./01_Exemplos_MVC/Exemplo01/Controllers/CustomerController.cs)
+* [Visualizar View](./01_Exemplos_MVC/Exemplo01/Views/Customer/Index.cshtml)
 
 ### 🌸 4. Atividade: Flores
 Desenvolvimento de uma listagem completa utilizando Model própria, Controller com 10 objetos e View estruturada.
-* [Visualizar Controller](./Exemplo01/Controllers/FlowerController.cs)
-* [Visualizar Model](./Exemplo01/Models/Flower.cs)
-* [Visualizar View](./Exemplo01/Views/Flower/Index.cshtml)
+* [Visualizar Controller](./01_Exemplos_MVC/Exemplo01/Controllers/FlowerController.cs)
+* [Visualizar Model](./01_Exemplos_MVC/Exemplo01/Models/Flower.cs)
+* [Visualizar View](./01_Exemplos_MVC/Exemplo01/Views/Flower/Index.cshtml)
 
 ### 🏥 5. Projeto: Clinic_vet (Models)
 Mapeamento de domínio para uma Clínica Veterinária, transformando um modelo de quadro negro em classes C#.
-* [Visualizar Pasta das Models](./VeterinaryClinic/Models/)
+* [Visualizar Pasta das Models](./02_Clinica_Veterinaria/VeterinaryClinic/Models/)
 
 ### 🏢 6. Projeto: Imobiliária (Class Library & Herança)
 Desenvolvimento de uma solução desacoplada, onde a lógica de domínio e as entidades foram isoladas em uma biblioteca de classes separada do projeto Web.
 
 Arquitetura: Uso de Class Library (.dll) para organizar as classes Property, House e Apartment
-* [Visualizar Pasta das Models](./PropertyLibrary/)
-* [Visualizar View](./Imobiliary/Views/Home/Properties.cshtml)
-* [Visualizar HomeController](./Imobiliary/Controllers/HomeController.cs)
+* [Visualizar Pasta das Models](./03_Imobiliaria/PropertyLibrary/)
+* [Visualizar View](./03_Imobiliaria/Imobiliary/Views/Home/Properties.cshtml)
+* [Visualizar HomeController](./03_Imobiliaria/Imobiliary/Controllers/HomeController.cs)
 
 ---
 
