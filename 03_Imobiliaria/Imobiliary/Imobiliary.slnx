@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Core/">
+    <Project Path="../Core.Domain/Core.Domain.csproj" Id="973f90b2-9fdb-4e8e-88f0-3c819a8b7c14" />
+  </Folder>
   <Project Path="../PropertyLibrary/PropertyLibrary.csproj" />
   <Project Path="Imobiliary.csproj" />
 </Solution>

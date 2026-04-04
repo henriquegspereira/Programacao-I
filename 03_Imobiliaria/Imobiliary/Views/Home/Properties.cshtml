@@ -61,21 +61,21 @@
                     @if (property is PropertyLibrary.House house)
                     {
                         <span>
-                            @(house.hasGarage ? "Has Garage" : "No Garage")
+                            @(house.HasGarage ? "Has Garage" : "No Garage")
                             <br />
-                            <small>(@house.floors @(house.floors > 1 ? "floors" : "floor"))</small>
+                            <small>(@house.Floors @(house.Floors > 1 ? "Floors" : "Floor"))</small>
                         </span>
                     }
                     else if (property is PropertyLibrary.Apartment apartment)
                     {
-                            string suffix = (apartment.floor == 1) ? "st" : 
-                                            (apartment.floor == 2) ? "nd" : 
-                                            (apartment.floor == 3) ? "rd" : "th";
+                            string suffix = (apartment.Floor == 1) ? "st" : 
+                                            (apartment.Floor == 2) ? "nd" : 
+                                            (apartment.Floor == 3) ? "rd" : "th";
                         
         
                         <span>
-                            On the @apartment.floor<sup>@suffix</sup> floor
-                            <small>(@(apartment.hasElevator ? "With Elevator" : "No Elevator"))</small>
+                            On the @apartment.Floor<sup>@suffix</sup> Floor
+                            <small>(@(apartment.HasElevator ? "With Elevator" : "No Elevator"))</small>
                         </span>
                     }
                     else
