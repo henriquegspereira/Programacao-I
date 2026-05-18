@@ -24,7 +24,6 @@ namespace Repository
             _order.OrderItems = order.OrderItems;
             _order.OrderStatus = order.OrderStatus;
             _order.Customer = order.Customer;
-            _order.Id = order.Id;
         }
         public Order GetById(int id)
         {

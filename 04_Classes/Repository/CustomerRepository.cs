@@ -24,8 +24,6 @@ namespace Repository
             _customer.LastName = customer.LastName;
             _customer.Email = customer.Email;
             _customer.Phone = customer.Phone;
-            _customer.HomeAdress = customer.HomeAdress;
-            _customer.ShippingAdress = customer.ShippingAdress;
         }
         public Customer GetById(int id)
         {
@@ -45,6 +43,11 @@ namespace Repository
                 .ToList();
 
             return customers;
+        }
+
+        public List<Customer> GetAll()
+        {
+            return MyData.Customers;
         }
     }
 }

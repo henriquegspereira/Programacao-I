@@ -1,3 +1,5 @@
+using Repository.Seeds;
+using Model;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -25,5 +27,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+CustomerSeeds.Seed();
+ProductSeeds.Seed();
 
 app.Run();

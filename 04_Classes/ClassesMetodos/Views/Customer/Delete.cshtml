@@ -1,0 +1,13 @@
+﻿@model Model.Customer
+
+<h2>Deseja realmente excluir o cliente?</h2>
+
+<div>
+    Nome: @Model.FirstName 
+</div>
+
+<form method="post" asp-controller="Customer" asp-action="ConfirmDelete">
+    <input type="hidden" asp-for="@Model.Id" />
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+    <a asp-controller="Customer" asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

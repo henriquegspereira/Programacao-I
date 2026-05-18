@@ -1,0 +1,19 @@
+﻿@model List<Model.Product>
+
+<thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+            
+    </tr>
+</thead>
+<tbody>
+    @foreach (var customer in Model)
+    {
+        <tr>
+            <td>@customer.Id</td>
+            <td>@customer.Name</td>
+            <td>@customer.Price</td>
+        </tr>
+    }

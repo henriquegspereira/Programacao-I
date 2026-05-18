@@ -1,6 +1,6 @@
 ﻿namespace Model
 {
-    public class Adress
+    public class Address
     {
         #region Attibutes
         public int Id { get; set; }
@@ -10,21 +10,23 @@
         public string PostalCode { get; set; } = string.Empty;
         public string Country { get; set; } = string.Empty;
         public string FederalState { get; set; } = string.Empty;
+        public AddressType AddressType { get; set; } 
         #endregion
 
         #region Constructors
-        public Adress()
+        public Address()
         {
         }
 
-        public Adress(
+        public Address(
             int id,
             string street,
             string number,
             string city,
             string postalCode,
             string country,
-            string federalState
+            string federalState,
+            AddressType adressType
         )
         {
             Id = id;
@@ -34,6 +36,7 @@
             PostalCode = postalCode;
             Country = country;
             FederalState = federalState;
+            AddressType = adressType;
         }
 
 
@@ -51,5 +54,12 @@
             return true;
         }
         #endregion
+    }
+
+    public enum AddressType
+    {
+        Residential,
+        Comercial,
+        Other
     }
 }

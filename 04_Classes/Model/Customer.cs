@@ -1,15 +1,11 @@
 ﻿namespace Model
 {
-    public class Customer
+    public class Customer : People
     {
         #region Attributes
         public int Id { get; set; }
-        public string FirstName { get; set; } = string.Empty;
-        public string LastName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public string Phone { get; set; } = string.Empty;
-        public Adress? HomeAdress { get; set; }
-        public Adress ShippingAdress { get; set; } = null!;
 
         #endregion
 
@@ -22,9 +18,7 @@
             string firstName, 
             string lastName, 
             string email, 
-            string phone, 
-            Adress? homeAdress, 
-            Adress shippingAdress
+            string phone
         )
         {
             Id = id;
@@ -32,8 +26,6 @@
             LastName = lastName;
             Email = email;
             Phone = phone;
-            HomeAdress = homeAdress;
-            ShippingAdress = shippingAdress;
         }
 
         #endregion

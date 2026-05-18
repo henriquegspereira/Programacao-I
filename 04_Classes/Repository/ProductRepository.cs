@@ -42,5 +42,10 @@ namespace Repository
 
             return products;
         }
+
+        public List<Product> GetAll()
+        {
+            return MyData.Products;
+        }
     }
 }
