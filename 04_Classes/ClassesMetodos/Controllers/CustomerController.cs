@@ -6,6 +6,7 @@ namespace ClassesMetodos.Controllers
     public class CustomerController : Controller
     {
         private CustomerRepository _customerRepository;
+        private AddressRepository _addressRepository;
 
         public CustomerController()
         {
@@ -13,12 +14,19 @@ namespace ClassesMetodos.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string search)
         {
-            Object objeto = new Object();
+            List<Customer> customers = [];
 
-            var customers = _customerRepository.GetAll();
-
+            if (!string.IsNullOrEmpty(search))
+            {
+              customers = _customerRepository.GetByName(search);
+            }
+            else
+            {
+                customers = _customerRepository.GetAll();
+            }
+            
             return View(customers);
         }
 
@@ -26,17 +34,19 @@ namespace ClassesMetodos.Controllers
         public IActionResult Create()
         {
             var customer = new Customer();
-            customer.Addresses.Add(new Address()); 
+            customer.Addresses.Add(new Address());
 
             return View(customer);
         }
-        
+
 
         [HttpPost]
         public IActionResult Create(Customer customer)
         {
-            if (customer == null)
-                return View(nameof(Index));
+            if (customer is null) return View(customer);
+
+            foreach (var a in customer.Addresses)
+                _addressRepository.Create(a);
 
             _customerRepository.Create(customer);
 
@@ -65,11 +75,37 @@ namespace ClassesMetodos.Controllers
                 return BadRequest();
 
             var customer = _customerRepository.GetById(id);
-                if (customer is null)
-                    return NotFound();
+            if (customer is null)
+                return NotFound();
 
             _customerRepository.Delete(customer);
 
+            return RedirectToAction(nameof(Index));
+        }
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            if (id <= 0)
+                return BadRequest();
+
+            var customer = _customerRepository.GetById(id);
+
+            if (customer is null)
+                return NotFound();
+
+            return View(customer);
+        }
+
+        [HttpPost]
+        public IActionResult Update(int id, Customer customer)
+        {
+            if (id <= 0 || customer is null)
+                return BadRequest();
+
+            if (id != customer.Id)
+                return BadRequest();
+
+            _customerRepository.Update(customer);
             return RedirectToAction(nameof(Index));
         }
     }
