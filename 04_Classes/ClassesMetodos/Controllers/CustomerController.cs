@@ -11,6 +11,7 @@ namespace ClassesMetodos.Controllers
         public CustomerController()
         {
             _customerRepository = new CustomerRepository();
+            _addressRepository = new AddressRepository();
         }
 
         [HttpGet]

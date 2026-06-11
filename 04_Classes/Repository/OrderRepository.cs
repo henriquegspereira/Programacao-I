@@ -3,11 +3,13 @@ using Repository.VirtualDataBase;
 
 namespace Repository
 {
-    public class OrderRepository
+    public class OrderRepository 
+        : BaseRepository<Order>
     {
 
         public void Create(Order order)
         {
+            order.Id = GetNextId();
             MyData.Orders.Add(order);
         }
 
@@ -31,9 +33,14 @@ namespace Repository
                 MyData.Orders.
                     FirstOrDefault(x => x.Id == id);
 
-            if (order is null) return null;
+            if (order is null) return null!;
 
             return order;
+        }
+
+        public List<Order> GetAll()
+        {
+            return MyData.Orders;
         }
     }
 }

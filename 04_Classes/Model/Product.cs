@@ -7,6 +7,8 @@
         public string Name { get; set; } = string.Empty;
         public double Price { get; set; }
 
+        public int CategoryId { get; set; }
+
         #endregion
 
         #region Constructors
@@ -17,12 +19,14 @@
         public Product(
             int id, 
             string name, 
-            double price
+            double price,
+            int categoryId
         )
         {
             Id = id;
             Name = name;
             Price = price;
+            CategoryId = categoryId;
         }
 
         #endregion

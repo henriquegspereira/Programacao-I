@@ -10,23 +10,30 @@ namespace Repository.Seeds
     {
         public static void Seed()
         {
-
-            if (MyData.Products.Count < 1)
-            {
-
-                Product p1 = new Product();
-                p1.Id = 1;
-                p1.Name = "Maconha";
-                p1.Price = 100;
-
-                Product p2 = new Product();
-                p2.Id = 2;
-                p2.Name = "Coca";
-                p2.Price = 50;
-
-                MyData.Products.Add(p1);
-                MyData.Products.Add(p2);
-            }
+            MyData.Products.AddRange(
+                new List<Product> 
+                { 
+                    new Product() {
+                        Id = 1,
+                        Name = "Maconha",
+                        Price = 100,
+                        CategoryId = 1
+                    },
+                    new Product() {
+                        Id = 2,
+                        Name = "Coca",
+                        Price = 50,
+                        CategoryId = 2
+                    },
+                    new Product()
+                    {
+                        Id = 3,
+                        Name = "LOLÓ",
+                        Price = 50,
+                        CategoryId = 3
+                    }
+                }
+            );
         }
     }
 }

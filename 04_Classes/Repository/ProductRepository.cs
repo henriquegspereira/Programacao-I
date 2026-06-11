@@ -3,11 +3,13 @@ using Repository.VirtualDataBase;
 
 namespace Repository
 {
-    public class ProductRepository
+    public class ProductRepository 
+        : BaseRepository<Product>
     {
 
         public void Create(Product product)
         {
+            product.Id = GetNextId();
             MyData.Products.Add(product);
         }
 
@@ -22,6 +24,7 @@ namespace Repository
 
             _product.Name = product.Name;
             _product.Price = product.Price;
+            _product.CategoryId = product.CategoryId;
         }
         public Product GetById(int id)
         {
@@ -29,7 +32,7 @@ namespace Repository
                 MyData.Products.
                     FirstOrDefault(x => x.Id == id);
 
-            if (product is null) return null;
+            if (product is null) return null!;
 
             return product;
         }
@@ -43,6 +46,18 @@ namespace Repository
             return products;
         }
 
+        public List<Product> GetByCategoryId(int categoryid)
+        {
+            List<Product> products = [];
+            foreach (var p in MyData.Products)
+            {
+                if (p.CategoryId == categoryid)
+                {
+                    products.Add(p);
+                }
+            }
+            return products;
+        }
         public List<Product> GetAll()
         {
             return MyData.Products;

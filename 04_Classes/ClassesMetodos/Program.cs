@@ -28,6 +28,7 @@ app.MapControllerRoute(
     .WithStaticAssets();
 
 CustomerSeeds.Seed();
+CategorySeeds.Seed();
 ProductSeeds.Seed();
 
 app.Run();
